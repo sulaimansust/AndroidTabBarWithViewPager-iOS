@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20238AC9213ECBBD00083D44 /* RMPageViewController in Resources */ = {isa = PBXBuildFile; fileRef = 20238AC8213ECBBD00083D44 /* RMPageViewController */; };
 		20D958EF213DB1C900BBBAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D958EE213DB1C900BBBAD3 /* AppDelegate.swift */; };
 		20D958F1213DB1C900BBBAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D958F0213DB1C900BBBAD3 /* ViewController.swift */; };
 		20D958F4213DB1C900BBBAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D958F2213DB1C900BBBAD3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20238AC8213ECBBD00083D44 /* RMPageViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RMPageViewController; sourceTree = "<group>"; };
 		20D958EB213DB1C900BBBAD3 /* AndroidTabBarWithViewPager-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AndroidTabBarWithViewPager-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D958EE213DB1C900BBBAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20D958F0213DB1C900BBBAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		20D958E2213DB1C900BBBAD3 = {
 			isa = PBXGroup;
 			children = (
+				20238AC8213ECBBD00083D44 /* RMPageViewController */,
 				20D958ED213DB1C900BBBAD3 /* AndroidTabBarWithViewPager-iOS */,
 				20D958EC213DB1C900BBBAD3 /* Products */,
 			);
@@ -125,6 +128,7 @@
 				20D958F9213DB1CE00BBBAD3 /* LaunchScreen.storyboard in Resources */,
 				20D958F6213DB1CE00BBBAD3 /* Assets.xcassets in Resources */,
 				20D958F4213DB1C900BBBAD3 /* Main.storyboard in Resources */,
+				20238AC9213ECBBD00083D44 /* RMPageViewController in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
