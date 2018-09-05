@@ -3,14 +3,14 @@
 //  Messenger
 //
 //  Created by Sulaiman Khan on 3/10/18.
-//   
+//  Copyright © 2018 Ring Inc. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
 //MARK: Need to check initialization if ok
-class RMPageManagerViewController : UIViewController {
+@objc class RMPageManagerViewController : UIViewController {
 	
 	//MARK: Local Variables
 	var disableSegmentView : Bool = false
@@ -21,7 +21,7 @@ class RMPageManagerViewController : UIViewController {
 	var viewControllers:[UIViewController]?
 	var segmentedDataModels:[RMSegmentedViewDataModel]?
 	
-    init(viewContollers:[UIViewController],dataModels:[RMSegmentedViewDataModel]) {
+	@objc init(viewContollers:[UIViewController],dataModels:[RMSegmentedViewDataModel]) {
 		super.init(nibName: nil, bundle: nil)
 		
 		self.viewControllers = viewContollers
@@ -105,12 +105,12 @@ class RMPageManagerViewController : UIViewController {
 		}
 	}
 	
-    func  selectViewControllerAt(index: Int) -> Void {
+	@objc func  selectViewControllerAt(index: Int) -> Void {
 		self.setCurrentViewControllerAt(index: index)
 		self.segmentedView.reloadWithSelectedIndex(index: index)
 	}
 	
-    func setBadgeStringAtSegmentWith(badgeString: String, segmentIndex: Int ) -> Void {
+	@objc func setBadgeStringAtSegmentWith(badgeString: String, segmentIndex: Int ) -> Void {
 		var segmentDataModel = self.segmentedDataModels![segmentIndex]
 
 		var badge = badgeString
