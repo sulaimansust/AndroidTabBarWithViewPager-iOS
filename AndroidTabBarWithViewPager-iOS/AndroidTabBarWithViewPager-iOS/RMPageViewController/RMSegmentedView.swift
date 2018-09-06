@@ -9,15 +9,11 @@
 import Foundation
 import UIKit
 
-class RMSegmentedViewDataModel:NSObject {
+struct RMSegmentedViewDataModel {
 	var titleString : String?
 	var badgeString : String?
 	
-	override init() {
-		super.init()
-	}
-	
-	@objc init(_ title: String?, badge: String?) {
+    init(_ title: String?, badge: String?) {
 		self.titleString = title
 		self.badgeString = badge
 	}

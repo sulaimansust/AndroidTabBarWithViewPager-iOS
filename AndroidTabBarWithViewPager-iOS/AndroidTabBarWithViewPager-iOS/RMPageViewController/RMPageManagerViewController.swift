@@ -21,7 +21,7 @@ import UIKit
 	var viewControllers:[UIViewController]?
 	var segmentedDataModels:[RMSegmentedViewDataModel]?
 	
-	@objc init(viewContollers:[UIViewController],dataModels:[RMSegmentedViewDataModel]) {
+	 init(viewContollers:[UIViewController],dataModels:[RMSegmentedViewDataModel]) {
 		super.init(nibName: nil, bundle: nil)
 		
 		self.viewControllers = viewContollers
@@ -111,7 +111,7 @@ import UIKit
 	}
 	
 	@objc func setBadgeStringAtSegmentWith(badgeString: String, segmentIndex: Int ) -> Void {
-		var segmentDataModel = self.segmentedDataModels![segmentIndex]
+        var segmentDataModel = self.segmentedDataModels![segmentIndex]
 
 		var badge = badgeString
 		

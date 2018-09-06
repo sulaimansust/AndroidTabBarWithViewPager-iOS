@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.setupTabViews()
+        self.setupNavigationBar()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +41,14 @@ class ViewController: UIViewController {
             self.view.addSubview(manager.view)
             self.addChildViewController(manager)
         }
-        }
+    }
+    
+    private func setupNavigationBar() -> Void {
+//        let navigationItem = UINavigationItem.init(title: "Test")
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Left ", style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Right", style: .plain, target: self, action: nil)
+    }
 
 }
 
