@@ -1,15 +1,15 @@
 //
-//  RMSegmentedView.swift
-//  Messenger
+//  SKSegmentedView.swift
+//  
 //
 //  Created by Sulaiman Khan on 3/10/18.
-//  Copyright © 2018 Ring Inc. All rights reserved.
+//
 //
 
 import Foundation
 import UIKit
 
-struct RMSegmentedViewDataModel {
+struct SKSegmentedViewDataModel {
 	var titleString : String?
 	var badgeString : String?
 	
@@ -24,27 +24,27 @@ public enum ScrollingItemType {
 	case backgroundView, collectionView, none
 }
 
-public protocol RMSegmentedViewDelegate: class  {
-	func segmentedView(_ segmentedView: RMSegmentedView, didSelectedIndex index: Int) -> Void
+public protocol SKSegmentedViewDelegate: class  {
+	func segmentedView(_ segmentedView: SKSegmentedView, didSelectedIndex index: Int) -> Void
 }
 
 
-public class RMSegmentedView : UIView {
+public class SKSegmentedView : UIView {
 	
 	@IBOutlet weak var selectedTabImageView: UIImageView!
 	@IBOutlet weak var collectionView: UICollectionView!
 	
 	var selectedIndex:Int!
-	var delegate:RMSegmentedViewDelegate?
+	var delegate:SKSegmentedViewDelegate?
 	
 	var lastScrollingValue : CGFloat!
 	var isScrollingRemote : Bool = false
 	var isLastCollectionScroll : Bool = false
 	var currentScrollingType : ScrollingItemType!
 	
-	var segementedDataModels : [RMSegmentedViewDataModel]!
+	var segementedDataModels : [SKSegmentedViewDataModel]!
 	
-	class func  viewWithSegments(segmentsArray: [RMSegmentedViewDataModel]) -> RMSegmentedView {
+	class func  viewWithSegments(segmentsArray: [SKSegmentedViewDataModel]) -> SKSegmentedView {
 		let segmentedView = initViewUsingNib()
 		segmentedView.segementedDataModels = segmentsArray
 		segmentedView.setupViews()
@@ -52,11 +52,11 @@ public class RMSegmentedView : UIView {
 	}
 	
 	class func nibName() -> String {
-		return "RMSegmentedView"
+		return "SKSegmentedView"
 	}
 	
-	class func initViewUsingNib() -> RMSegmentedView {
-		let segmentedView = Bundle.main.loadNibNamed(nibName(), owner: self, options: nil)![0] as! RMSegmentedView
+	class func initViewUsingNib() -> SKSegmentedView {
+		let segmentedView = Bundle.main.loadNibNamed(nibName(), owner: self, options: nil)![0] as! SKSegmentedView
 		return segmentedView
 		
 //		let vc = UIViewController.init(nibName: nibName(), bundle: Bundle.main)
@@ -90,10 +90,10 @@ public class RMSegmentedView : UIView {
 		self.collectionView.dataSource = self
 		self.collectionView.delegate = self
 		
-		self.collectionView.register(RMSegmentedCollectionViewCell.nib(), forCellWithReuseIdentifier: RMSegmentedCollectionViewCell.nibName())
+		self.collectionView.register(SKSegmentedCollectionViewCell.nib(), forCellWithReuseIdentifier: SKSegmentedCollectionViewCell.nibName())
 		
 		//TODO: May be problem in this section
-		let layout  =  RMSegmentedCollectionViewLayout.init()
+		let layout  =  SKSegmentedCollectionViewLayout.init()
 		
 		layout.itemSize = CGSize(width: self.itemWidth(), height: self.collectionView.frame.size.height)
 		
@@ -241,7 +241,7 @@ public class RMSegmentedView : UIView {
 		
 	}
 	
-	func updateSegmentWithDataModel(segmentDataModel: RMSegmentedViewDataModel, at segmentIndex: Int) -> Void {
+	func updateSegmentWithDataModel(segmentDataModel: SKSegmentedViewDataModel, at segmentIndex: Int) -> Void {
 		self.segementedDataModels[segmentIndex] = segmentDataModel
 		self.collectionView.reloadData()
 	}
@@ -250,7 +250,7 @@ public class RMSegmentedView : UIView {
 	
 }
 
-extension RMSegmentedView : UICollectionViewDelegate {
+extension SKSegmentedView : UICollectionViewDelegate {
 	public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		
 		let cell = collectionView.cellForItem(at: indexPath)
@@ -282,7 +282,7 @@ extension RMSegmentedView : UICollectionViewDelegate {
 }
 
 
-extension RMSegmentedView : UICollectionViewDataSource {
+extension SKSegmentedView : UICollectionViewDataSource {
 	
 	public func numberOfSections(in collectionView: UICollectionView) -> Int {
 		return 1
@@ -294,7 +294,7 @@ extension RMSegmentedView : UICollectionViewDataSource {
 	
 	public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		
-		let cell: RMSegmentedCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: RMSegmentedCollectionViewCell.nibName(), for: indexPath) as! RMSegmentedCollectionViewCell
+		let cell: SKSegmentedCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: SKSegmentedCollectionViewCell.nibName(), for: indexPath) as! SKSegmentedCollectionViewCell
 		
 		let segmentDataModel = self.segementedDataModels[indexPath.row]
 		cell.configureCellWith(segmentedViewDataModel: segmentDataModel)
@@ -306,11 +306,11 @@ extension RMSegmentedView : UICollectionViewDataSource {
 	
 }
 
-extension RMSegmentedView : UIGestureRecognizerDelegate {
+extension SKSegmentedView : UIGestureRecognizerDelegate {
 
 }
 
-extension RMSegmentedView : UIScrollViewDelegate {
+extension SKSegmentedView : UIScrollViewDelegate {
 	public func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		
 		if self.isScrollingRemote {

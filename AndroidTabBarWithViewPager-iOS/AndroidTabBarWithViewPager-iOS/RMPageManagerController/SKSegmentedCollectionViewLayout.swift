@@ -1,15 +1,15 @@
 //
-//  RMSegmentedCollectionViewLayout.swift
-//  Messenger
+//  SKSegmentedCollectionViewLayout.swift
+//  
 //
 //  Created by Sulaiman Khan on 3/10/18.
-//  Copyright © 2018 Ring Inc. All rights reserved.
+//
 //
 
 import Foundation
 import UIKit
 
-class RMSegmentedCollectionViewLayout: UICollectionViewFlowLayout {
+class SKSegmentedCollectionViewLayout: UICollectionViewFlowLayout {
 	
 	
 	override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {

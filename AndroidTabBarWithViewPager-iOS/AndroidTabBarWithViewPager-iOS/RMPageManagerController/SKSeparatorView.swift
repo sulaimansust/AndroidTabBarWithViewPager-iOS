@@ -1,15 +1,15 @@
 //
-//  RMSeparatorView.swift
-//  Messenger
+//  SKSeparatorView.swift
+//  
 //
 //  Created by Sulaiman Khan on 2/13/18.
-//  Copyright © 2018 Ring Inc. All rights reserved.
+//
 //
 
 import Foundation
 import UIKit
 
-class RMSeparatorView: UIView {
+class SKSeparatorView: UIView {
 	
 	var seperatorLineColor:UIColor!
 	var seperatorLineBackgroundColor:UIColor!
@@ -28,10 +28,10 @@ class RMSeparatorView: UIView {
 	
 	
 	fileprivate func initDefaults() ->Void{
-		self.backgroundColor = RMSeparatorView.defaultSeparatorBackgroundColor()
-		self.seperatorLineColor = RMSeparatorView.defaultSeparatorColor()
-		self.seperatorLineBackgroundColor = RMSeparatorView.defaultSeparatorBackgroundColor()
-		self.seperatorLineThickness = RMSeparatorView.defaultSeparatorThickness()
+		self.backgroundColor = SKSeparatorView.defaultSeparatorBackgroundColor()
+		self.seperatorLineColor = SKSeparatorView.defaultSeparatorColor()
+		self.seperatorLineBackgroundColor = SKSeparatorView.defaultSeparatorBackgroundColor()
+		self.seperatorLineThickness = SKSeparatorView.defaultSeparatorThickness()
 	}
 	
 	override func draw(_ rect: CGRect) {

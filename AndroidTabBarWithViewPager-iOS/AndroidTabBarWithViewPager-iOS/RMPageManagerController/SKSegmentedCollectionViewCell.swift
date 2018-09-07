@@ -3,13 +3,13 @@
 //  Messenger
 //
 //  Created by Sulaiman Khan on 3/10/18.
-//  Copyright © 2018 Ring Inc. All rights reserved.
+//  
 //
 
 import Foundation
 import UIKit
 
-class RMSegmentedCollectionViewCell : UICollectionViewCell {
+class SKSegmentedCollectionViewCell : UICollectionViewCell {
 	
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var badgeLabel: UILabel!
@@ -22,7 +22,7 @@ class RMSegmentedCollectionViewCell : UICollectionViewCell {
 	}
 	
 	class func nibName() -> String {
-		return "RMSegmentedCollectionViewCell"
+		return "SKSegmentedCollectionViewCell"
 	}
 	
 	override func awakeFromNib() {
@@ -55,7 +55,7 @@ class RMSegmentedCollectionViewCell : UICollectionViewCell {
 		}
 	}
 	
-	func configureCellWith(segmentedViewDataModel: RMSegmentedViewDataModel) -> Void {
+	func configureCellWith(segmentedViewDataModel: SKSegmentedViewDataModel) -> Void {
 		self.titleLabel.text = segmentedViewDataModel.titleString
 		
 		if let stringBadge = segmentedViewDataModel.badgeString {

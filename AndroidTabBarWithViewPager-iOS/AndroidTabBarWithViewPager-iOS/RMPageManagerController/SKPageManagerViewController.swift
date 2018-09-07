@@ -1,27 +1,27 @@
 //
-//  RMPageManagerViewController.swift
-//  Messenger
+//  SKPageManagerViewController.swift
+//  
 //
 //  Created by Sulaiman Khan on 3/10/18.
-//  Copyright © 2018 Ring Inc. All rights reserved.
+//
 //
 
 import Foundation
 import UIKit
 
 //MARK: Need to check initialization if ok
-@objc class RMPageManagerViewController : UIViewController {
+class SKPageManagerViewController : UIViewController {
 	
 	//MARK: Local Variables
 	var disableSegmentView : Bool = false
 	
-	var segmentedView : RMSegmentedView!
+	var segmentedView : SKSegmentedView!
 	var pageViewController : UIPageViewController!
 	
 	var viewControllers:[UIViewController]?
-	var segmentedDataModels:[RMSegmentedViewDataModel]?
+	var segmentedDataModels:[SKSegmentedViewDataModel]?
 	
-	 init(viewContollers:[UIViewController],dataModels:[RMSegmentedViewDataModel]) {
+	 init(viewContollers:[UIViewController],dataModels:[SKSegmentedViewDataModel]) {
 		super.init(nibName: nil, bundle: nil)
 		
 		self.viewControllers = viewContollers
@@ -43,7 +43,7 @@ import UIKit
 	fileprivate func setupSegmentedView() -> Void {
 		
 		if !self.disableSegmentView {
-			self.segmentedView = RMSegmentedView.viewWithSegments(segmentsArray: self.segmentedDataModels!)
+			self.segmentedView = SKSegmentedView.viewWithSegments(segmentsArray: self.segmentedDataModels!)
 			self.segmentedView.delegate = self
 			self.view.addSubview(segmentedView)
 		}
@@ -131,7 +131,7 @@ import UIKit
 	
 }
 
-extension RMPageManagerViewController : UIPageViewControllerDataSource {
+extension SKPageManagerViewController : UIPageViewControllerDataSource {
 	
 	func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 		
@@ -171,11 +171,11 @@ extension RMPageManagerViewController : UIPageViewControllerDataSource {
 	
 }
 
-extension RMPageManagerViewController : UIPageViewControllerDelegate {
+extension SKPageManagerViewController : UIPageViewControllerDelegate {
 	
 }
 
-extension RMPageManagerViewController : UIScrollViewDelegate {
+extension SKPageManagerViewController : UIScrollViewDelegate {
 	
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		let scrollingValue = (scrollView.contentOffset.x - scrollView.frame.size.width) / scrollView.frame.size.width
@@ -193,9 +193,9 @@ extension RMPageManagerViewController : UIScrollViewDelegate {
 
 
 
-extension RMPageManagerViewController : RMSegmentedViewDelegate {
+extension SKPageManagerViewController : SKSegmentedViewDelegate {
 	
-	func segmentedView(_ segmentedView: RMSegmentedView, didSelectedIndex index: Int) {
+	func segmentedView(_ segmentedView: SKSegmentedView, didSelectedIndex index: Int) {
 		self.setCurrentViewControllerAt(index: index)
 	}
 }

@@ -13,13 +13,13 @@
 		20D958F6213DB1CE00BBBAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D958F5213DB1CE00BBBAD3 /* Assets.xcassets */; };
 		20D958F9213DB1CE00BBBAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D958F7213DB1CE00BBBAD3 /* LaunchScreen.storyboard */; };
 		20EAFBAA21404EC300B90F69 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBA921404EC300B90F69 /* DummyViewController.swift */; };
-		20EAFBB3214050EF00B90F69 /* RMSegmentedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBAC214050EF00B90F69 /* RMSegmentedCollectionViewCell.swift */; };
-		20EAFBB4214050EF00B90F69 /* RMSegmentedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBAD214050EF00B90F69 /* RMSegmentedCollectionViewLayout.swift */; };
-		20EAFBB5214050EF00B90F69 /* RMSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBAE214050EF00B90F69 /* RMSeparatorView.swift */; };
-		20EAFBB6214050EF00B90F69 /* RMSegmentedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EAFBAF214050EF00B90F69 /* RMSegmentedCollectionViewCell.xib */; };
-		20EAFBB7214050EF00B90F69 /* RMSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBB0214050EF00B90F69 /* RMSegmentedView.swift */; };
-		20EAFBB8214050EF00B90F69 /* RMPageManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBB1214050EF00B90F69 /* RMPageManagerViewController.swift */; };
-		20EAFBB9214050EF00B90F69 /* RMSegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EAFBB2214050EF00B90F69 /* RMSegmentedView.xib */; };
+		20EAFBB3214050EF00B90F69 /* SKSegmentedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBAC214050EF00B90F69 /* SKSegmentedCollectionViewCell.swift */; };
+		20EAFBB4214050EF00B90F69 /* SKSegmentedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBAD214050EF00B90F69 /* SKSegmentedCollectionViewLayout.swift */; };
+		20EAFBB5214050EF00B90F69 /* SKSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBAE214050EF00B90F69 /* SKSeparatorView.swift */; };
+		20EAFBB6214050EF00B90F69 /* SKSegmentedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EAFBAF214050EF00B90F69 /* SKSegmentedCollectionViewCell.xib */; };
+		20EAFBB7214050EF00B90F69 /* SKSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBB0214050EF00B90F69 /* SKSegmentedView.swift */; };
+		20EAFBB8214050EF00B90F69 /* SKPageManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBB1214050EF00B90F69 /* SKPageManagerViewController.swift */; };
+		20EAFBB9214050EF00B90F69 /* SKSegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EAFBB2214050EF00B90F69 /* SKSegmentedView.xib */; };
 		20EAFBBC214051D300B90F69 /* UIStoryboard+main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAFBBB214051D300B90F69 /* UIStoryboard+main.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,13 +32,13 @@
 		20D958F8213DB1CE00BBBAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20D958FA213DB1CE00BBBAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20EAFBA921404EC300B90F69 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
-		20EAFBAC214050EF00B90F69 /* RMSegmentedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSegmentedCollectionViewCell.swift; sourceTree = "<group>"; };
-		20EAFBAD214050EF00B90F69 /* RMSegmentedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSegmentedCollectionViewLayout.swift; sourceTree = "<group>"; };
-		20EAFBAE214050EF00B90F69 /* RMSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSeparatorView.swift; sourceTree = "<group>"; };
-		20EAFBAF214050EF00B90F69 /* RMSegmentedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSegmentedCollectionViewCell.xib; sourceTree = "<group>"; };
-		20EAFBB0214050EF00B90F69 /* RMSegmentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSegmentedView.swift; sourceTree = "<group>"; };
-		20EAFBB1214050EF00B90F69 /* RMPageManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPageManagerViewController.swift; sourceTree = "<group>"; };
-		20EAFBB2214050EF00B90F69 /* RMSegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSegmentedView.xib; sourceTree = "<group>"; };
+		20EAFBAC214050EF00B90F69 /* SKSegmentedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSegmentedCollectionViewCell.swift; sourceTree = "<group>"; };
+		20EAFBAD214050EF00B90F69 /* SKSegmentedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSegmentedCollectionViewLayout.swift; sourceTree = "<group>"; };
+		20EAFBAE214050EF00B90F69 /* SKSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSeparatorView.swift; sourceTree = "<group>"; };
+		20EAFBAF214050EF00B90F69 /* SKSegmentedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKSegmentedCollectionViewCell.xib; sourceTree = "<group>"; };
+		20EAFBB0214050EF00B90F69 /* SKSegmentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSegmentedView.swift; sourceTree = "<group>"; };
+		20EAFBB1214050EF00B90F69 /* SKPageManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPageManagerViewController.swift; sourceTree = "<group>"; };
+		20EAFBB2214050EF00B90F69 /* SKSegmentedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SKSegmentedView.xib; sourceTree = "<group>"; };
 		20EAFBBB214051D300B90F69 /* UIStoryboard+main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+main.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,13 +88,13 @@
 		20EAFBAB214050EF00B90F69 /* RMPageManagerController */ = {
 			isa = PBXGroup;
 			children = (
-				20EAFBAC214050EF00B90F69 /* RMSegmentedCollectionViewCell.swift */,
-				20EAFBAD214050EF00B90F69 /* RMSegmentedCollectionViewLayout.swift */,
-				20EAFBAE214050EF00B90F69 /* RMSeparatorView.swift */,
-				20EAFBAF214050EF00B90F69 /* RMSegmentedCollectionViewCell.xib */,
-				20EAFBB0214050EF00B90F69 /* RMSegmentedView.swift */,
-				20EAFBB1214050EF00B90F69 /* RMPageManagerViewController.swift */,
-				20EAFBB2214050EF00B90F69 /* RMSegmentedView.xib */,
+				20EAFBAC214050EF00B90F69 /* SKSegmentedCollectionViewCell.swift */,
+				20EAFBAD214050EF00B90F69 /* SKSegmentedCollectionViewLayout.swift */,
+				20EAFBAE214050EF00B90F69 /* SKSeparatorView.swift */,
+				20EAFBAF214050EF00B90F69 /* SKSegmentedCollectionViewCell.xib */,
+				20EAFBB0214050EF00B90F69 /* SKSegmentedView.swift */,
+				20EAFBB1214050EF00B90F69 /* SKPageManagerViewController.swift */,
+				20EAFBB2214050EF00B90F69 /* SKSegmentedView.xib */,
 			);
 			path = RMPageManagerController;
 			sourceTree = "<group>";
@@ -165,10 +165,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EAFBB6214050EF00B90F69 /* RMSegmentedCollectionViewCell.xib in Resources */,
+				20EAFBB6214050EF00B90F69 /* SKSegmentedCollectionViewCell.xib in Resources */,
 				20D958F9213DB1CE00BBBAD3 /* LaunchScreen.storyboard in Resources */,
 				20D958F6213DB1CE00BBBAD3 /* Assets.xcassets in Resources */,
-				20EAFBB9214050EF00B90F69 /* RMSegmentedView.xib in Resources */,
+				20EAFBB9214050EF00B90F69 /* SKSegmentedView.xib in Resources */,
 				20D958F4213DB1C900BBBAD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,14 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EAFBB4214050EF00B90F69 /* RMSegmentedCollectionViewLayout.swift in Sources */,
-				20EAFBB3214050EF00B90F69 /* RMSegmentedCollectionViewCell.swift in Sources */,
+				20EAFBB4214050EF00B90F69 /* SKSegmentedCollectionViewLayout.swift in Sources */,
+				20EAFBB3214050EF00B90F69 /* SKSegmentedCollectionViewCell.swift in Sources */,
 				20D958F1213DB1C900BBBAD3 /* ViewController.swift in Sources */,
-				20EAFBB5214050EF00B90F69 /* RMSeparatorView.swift in Sources */,
+				20EAFBB5214050EF00B90F69 /* SKSeparatorView.swift in Sources */,
 				20EAFBBC214051D300B90F69 /* UIStoryboard+main.swift in Sources */,
-				20EAFBB7214050EF00B90F69 /* RMSegmentedView.swift in Sources */,
+				20EAFBB7214050EF00B90F69 /* SKSegmentedView.swift in Sources */,
 				20EAFBAA21404EC300B90F69 /* DummyViewController.swift in Sources */,
-				20EAFBB8214050EF00B90F69 /* RMPageManagerViewController.swift in Sources */,
+				20EAFBB8214050EF00B90F69 /* SKPageManagerViewController.swift in Sources */,
 				20D958EF213DB1C900BBBAD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
