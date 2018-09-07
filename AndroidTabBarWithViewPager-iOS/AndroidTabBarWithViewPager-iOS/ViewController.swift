@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
 
     private func setupTabViews() {
-        for i in 0..<5 {
+        for i in 0..<3 {
             if let viewController = UIStoryboard.mainStoryBoard().instantiateViewController(withIdentifier: "DummyViewController") as? DummyViewController {
                 viewController.name = "ViewController no \(i+1)"
                 self.viewControllers.append(viewController)
@@ -44,10 +44,16 @@ class ViewController: UIViewController {
     }
     
     private func setupNavigationBar() -> Void {
-//        let navigationItem = UINavigationItem.init(title: "Test")
+        
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.edgesForExtendedLayout = []
+        
+        self.navigationItem.title = "Android Tab Bar"
+        
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "Left ", style: .plain, target: self, action: nil)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Right", style: .plain, target: self, action: nil)
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "Left ", style: .plain, target: self, action: nil)
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Right", style: .plain, target: self, action: nil)
+// 
     }
 
 }

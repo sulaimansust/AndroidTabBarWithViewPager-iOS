@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				20EAFBBA2140518A00B90F69 /* Extensions */,
-				20EAFBAB214050EF00B90F69 /* RMPageViewController */,
+				20EAFBAB214050EF00B90F69 /* RMPageManagerController */,
 				20D958EE213DB1C900BBBAD3 /* AppDelegate.swift */,
 				20D958F0213DB1C900BBBAD3 /* ViewController.swift */,
 				20D958F2213DB1C900BBBAD3 /* Main.storyboard */,
@@ -85,7 +85,7 @@
 			path = "AndroidTabBarWithViewPager-iOS";
 			sourceTree = "<group>";
 		};
-		20EAFBAB214050EF00B90F69 /* RMPageViewController */ = {
+		20EAFBAB214050EF00B90F69 /* RMPageManagerController */ = {
 			isa = PBXGroup;
 			children = (
 				20EAFBAC214050EF00B90F69 /* RMSegmentedCollectionViewCell.swift */,
@@ -96,7 +96,7 @@
 				20EAFBB1214050EF00B90F69 /* RMPageManagerViewController.swift */,
 				20EAFBB2214050EF00B90F69 /* RMSegmentedView.xib */,
 			);
-			path = RMPageViewController;
+			path = RMPageManagerController;
 			sourceTree = "<group>";
 		};
 		20EAFBBA2140518A00B90F69 /* Extensions */ = {
